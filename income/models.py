@@ -15,6 +15,7 @@ class Income(models.Model):
 
 class Source(models.Model):
     name=models.CharField(max_length=256)
-
+    
     def __str__(self) :
         return self.name
+
