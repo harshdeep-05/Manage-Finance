@@ -11,41 +11,41 @@
       >
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="">Expenses</a>
+            <a href="">Income</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            My Expenses
+            My Income
           </li>
         </ol>
       </nav>
     </div>
 
     <div class="col-md-2">
-      <a href="{% url 'add_expense' %}" class="btn btn-primary">Add Expense</a>
+      <a href="{% url 'add_income' %}" class="btn btn-primary">Add Income</a>
     </div>
   </div>
 
   <div class="container" style="padding-left: 220px; padding-top: 20px">
 
-{% if expenses.count %}
+{% if income.count %}
 
     <table class="table table-stripped table-hover">
       <thead>
         <tr>
           <th>Amount (in Rs.)</th>
-          <th>Category</th>
+          <th>Source</th>
           <th>Desciption</th>
           <th>Date</th>
         </tr>
       </thead>
       <tbody>
 
-      {% for expense in expenses%}
+      {% for income in incomes%}
         <tr>
-          <td>{{expense.amount}}</td>
-          <td>{{expense.category}}</td>
-          <td>{{expense.description}}</td>
-          <td>{{expense.date}}</td>
+          <td>{{income.amount}}</td>
+          <td>{{income.category}}</td>
+          <td>{{income.description}}</td>
+          <td>{{income.date}}</td>
         </tr>
         {% endfor %}
       </tbody>
