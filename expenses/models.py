@@ -10,6 +10,9 @@ class Expense(models.Model):
     owner=models.ForeignKey(to=User, on_delete=models.CASCADE)
     category=models.CharField(max_length=256)
 
+    class Meta:
+        ordering = ["date"]
+
     def __str__(self) :
         return self.category
 

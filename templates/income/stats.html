@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-10">
+      <nav
+        aria-label="breadcrumb"
+        style="padding-left: 220px; padding-top: 20px"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="">income Report</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            income Report
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="col-md-2">
+      <a href="" class="btn btn-primary">income Report</a>
+    </div>
+  </div>
+  <canvas id="myChart" width="300" height="300" 
+   style ="padding-left:220px; padding-bottom:200px">
+  </canvas>
+</div>
+
+<script src="{% static 'js/income_stats.js' %}"></script>
+
+{% endblock %}

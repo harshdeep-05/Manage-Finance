@@ -10,6 +10,9 @@ class Income(models.Model):
     #owner=models.ForeignKey(to=User, on_delete=models.CASCADE)
     source=models.CharField(max_length=256)
 
+    class Meta:
+        ordering = ["date"]
+
     def __str__(self) :
         return self.source
 
