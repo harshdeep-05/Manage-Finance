@@ -1,4 +1,4 @@
-# Manage-Finance
+# Xpense
 
-This is a Personal Finance Management project where you can add your daily expenses/income.
-Gives and idea of where you are spending/earning from.
+-Designed and implemented a Personal Finance Management website that supports User Authentication, Authorization and full CRUD functionality for expenses using Django
+-Used Postgres Database to store data and user information
